@@ -33,10 +33,10 @@
 </head>
 <body>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/MASHLE_anime_logo.png" alt width= "650" height="400">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/13/MASHLE_anime_logo.png" alt width= "630" height="310">
+<form>
 
 
-    <form>
         <h3>Faça Login ou se Cadastre:</h3>
         <input type="text" placeholder="Login" id="login">
         <input type="password" placeholder="Senha" id="senha">
@@ -60,6 +60,50 @@
                 alert('Usuário ou senha incorretos');
             }
         }
+    
+    
+    
+    
+    
     </script>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDwh6VCNQP10sOJlqz1KbbMF11eH19uk_c",
+      authDomain: "projeto-de-back-end.firebaseapp.com",
+      projectId: "projeto-de-back-end",
+      storageBucket: "projeto-de-back-end.firebasestorage.app",
+      messagingSenderId: "1057857938534",
+      appId: "1:1057857938534:web:5f50f00b06169276b2b9a7",
+      measurementId: "G-TNEZ549NM6"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+function logar (){
+
+
+var login = document.getElementById(login).Value;
+
+var senha = document.getElementById(senha).Value;
+
+if (!login||!senha)
+
+}
+
+
+</script>
+
+
 </body>
 </html>
