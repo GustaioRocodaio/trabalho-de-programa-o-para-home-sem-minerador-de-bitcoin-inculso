@@ -90,16 +90,39 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-function logar (){
+function logar () {
 
+    function salvar cadastro(event){
+Event.prevent default();
 
-var login = document.getElementById(login).Value;
+var login = document.getElementById('login').Value;
 
-var senha = document.getElementById(senha).Value;
+var senha = document.getElementById('senha').Value;
 
-if (!login||!senha)
+if (!login||!senha){
 
+    alert("preencha todos os campos");
+    return
+
+    Set(ref(DB, 'usuários/'+login), {
+        login: login
+        senha: senha
+    
+    })
+
+    .then(()> {
+        alert("usuário cadastrado com sucesso!");
+
+        location.HEREF="home.html";
+    })
+    .catch ((erros)=> {
+        console.error("erro ao salvar:", error);
+        alert("erro ao cadastrar.");
+
+    });
 }
+
+}}
 
 
 </script>
