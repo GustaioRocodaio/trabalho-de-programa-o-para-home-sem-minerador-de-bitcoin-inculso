@@ -1,5 +1,4 @@
 body {
-
 background-color: black;
 
 text-align: center;
@@ -63,7 +62,7 @@ top: 0;
 }
 
 
-.assinatura {
+.assinatura1 {
 color: black;
 background-color: rgb(47, 255, 89);
 width: 500px;
@@ -73,3 +72,24 @@ border-radius: 20px; border-radius: 20px;
 
 }
 
+
+.assinatura2 {
+    color: black;
+    background-color: rgb(47, 255, 89);
+    width: 500px;
+    
+    border-radius: 20px; border-radius: 20px;
+    
+    
+    }
+    
+#assinar {
+
+    align-items: center; 
+        
+    justify-content: space-around ;
+    
+    
+    display: flex;
+
+}
